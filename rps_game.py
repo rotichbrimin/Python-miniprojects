@@ -12,6 +12,7 @@ while True:
 
     if user_choice == "quit":
         print("Thanks for playing!")
+        print(f"Your score :{user_score} and Computer score :{computer_score} and Tie score: {tie_score}")
         break
 
     if user_choice not in options:

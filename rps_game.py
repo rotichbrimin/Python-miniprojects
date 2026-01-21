@@ -1,5 +1,8 @@
 import random
 
+user_score = 0
+computer_score = 0
+tie_score = 0
 print("Welcome to Rock, Paper, Scissors!")
 
 options = ["rock", "paper", "scissors"]
@@ -21,6 +24,7 @@ while True:
 
     if user_choice == computer_choice:
         print("It is a tie!")
+        tie_score += 1
 
     elif (
         (user_choice == "rock" and computer_choice == "scissors")
@@ -28,6 +32,12 @@ while True:
         or (user_choice == "paper" and computer_choice == "rock")
     ):
         print("You win !")
+        user_score += 1
 
     else:
         print("You lose !")
+        computer_score += 1
+
+    print(
+        f"Score -> You : {user_score} | Computer : {computer_score} ties :{tie_score}\n"
+    )

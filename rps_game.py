@@ -11,8 +11,8 @@ while True:
     user_choice = input("Enter rock, paper, scissors (or 'quit' to exit): ").lower()
 
     if user_choice == "quit":
-        print("Thanks for playing!")
-        print(f"Your score :{user_score} and Computer score :{computer_score} and Tie score: {tie_score}")
+        print("Thanks for playing! We hope to see you soon 😊😍")
+        print(f"Your score :{user_score}, Computer score :{computer_score} and Tie score: {tie_score}")
         break
 
     if user_choice not in options:
@@ -24,7 +24,7 @@ while True:
     print("Computer choice :", computer_choice)
 
     if user_choice == computer_choice:
-        print("It is a tie!")
+        print("It is a tie! 🤝")
         tie_score += 1
 
     elif (
@@ -32,13 +32,13 @@ while True:
         or (user_choice == "scissors" and computer_choice == "paper")
         or (user_choice == "paper" and computer_choice == "rock")
     ):
-        print("You win !")
+        print("You win! 😍")
         user_score += 1
 
     else:
-        print("You lose !")
+        print("You lose! 😔")
         computer_score += 1
 
     print(
-        f"Score -> You : {user_score} | Computer : {computer_score} ties :{tie_score}\n"
+        f"Score = You : {user_score} | Computer : {computer_score} | ties :{tie_score}\n"
     )

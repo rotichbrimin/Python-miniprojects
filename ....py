@@ -4,6 +4,7 @@ voted_count = 0
 total_people = 0
 minors = 0
 while True:
+    name = input("Enter your name :")
     nationality = input("Enter your nationality :").lower()
     age = int(input("Enter your age: "))
     
